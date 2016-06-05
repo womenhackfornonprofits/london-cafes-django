@@ -1,0 +1,9 @@
+frontend/.sass-cache/
+frontend/node_modules
+frontend/css/styles.css
+frontend/css/styles.css.map
+# Django/Python
+*.pyc
+*egg-info/
+venv
+*.cache
