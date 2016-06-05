@@ -50,7 +50,27 @@ Each cafe will be handpicked and “features” ranked like wifi signal, how gre
 8. Get [Postgres](http://www.postgresql.org/)
 9. Create empty db for now locally, `createdb london_cafes`
 10. Start the server: `python manage.py runserver`
+11. Go inside frontend folder: 
+	
+	```cd frontend```
+12. Install all the dependencies:
 
+	 ```npm install```
+
+## Running the project locally
+1. Go inside the django app directory: 
+
+	```cd london_cafes```
+2. Run django server:
+	
+	```python manage.py runserver```
+	
+3. The project is now running on `http://127.0.0.1:8000/`, go to that address in your browser. 
+
+## Front End changes
+1. Make css and javascript changes in the ```frontend``` folder
+2. Make any HTML changes in the Django templates located in `london_cafes/london_cafes/templates`
+3. Use `grunt default` in the frontend folder to build, watch and copy all the required files automatically into the Django static folder.
 
 # Contributing
 Please follow a few guidelines in order to contribute to the project:
