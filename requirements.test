@@ -1,0 +1,2 @@
+flake8
+pytest==2.9.2
