@@ -49,13 +49,14 @@ Each cafe will be handpicked and “features” ranked like wifi signal, how gre
 5. Create a new virtual enviroment for the project `mkvirtualenv london_cafes`
 6. Use this enviroment or change to this from another by using: `workon london_cafes`
 7. Go to project folder: `pip install -r requirements.txt`
-8. Get [Postgres](http://www.postgresql.org/)
-9. Create empty db for now locally, `createdb london_cafes`
-10. Start the server: `python manage.py runserver`
-11. Go inside frontend folder: 
+8. Go to project folder: `pip install -r requirements.test`
+9. Get [Postgres](http://www.postgresql.org/)
+10. Create empty db for now locally, `createdb london_cafes`
+11. Start the server: `python manage.py runserver`
+12. Go inside frontend folder: 
 	
 	```cd frontend```
-12. Install all the dependencies:
+13. Install all the dependencies:
 
 	 ```npm install```
 
