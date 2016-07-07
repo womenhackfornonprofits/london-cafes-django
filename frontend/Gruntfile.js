@@ -18,11 +18,21 @@ module.exports = function(grunt) {
         },
         //------- SASS -------//
         sass: {
-            dist: {
-                files: {
-                    'css/styles.css': 'sass/styles.scss'
-                }
+          dev: {
+             options: {
+               style: 'expanded',
+               loadPath: 'node_modules/normalize-scss/sass/'
+             },
+           },
+          dist: {
+            options: {
+                style: 'compressed',
+                loadPath: 'node_modules/normalize-scss/sass/'
+            },
+            files: {
+                'css/styles.css': 'sass/styles.scss'
             }
+          }
         },
         //------- Watch SASS -> CSS -------//
         watch: {
