@@ -1,0 +1,17 @@
+.cafe-locator {
+	max-width: 30em;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+
+	&__submit {
+		display: inline-block;
+		flex: 0 0 4em;
+	}
+
+	&__search {
+		display: inline-block;
+		max-width: 20em;
+		flex: auto;
+	}
+}

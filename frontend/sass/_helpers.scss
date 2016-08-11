@@ -1,0 +1,11 @@
+.hidden {
+	display: none;
+}
+
+.visually-hidden {
+	height: 0;
+    width: 0;
+    line-height: 0;
+    color: transparent;
+    background: transparent;
+}

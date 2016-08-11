@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         cssmin: {
             combine: {
                 files: {
-                    '	../london_cafes/static/styles/styles.css': ['css/styles.css']
+                    '../london_cafes/static/styles/styles.css': ['css/styles.css']
                 }
             }
         },
@@ -20,7 +20,8 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'css/styles.css': 'sass/styles.scss'
+                    //'css/styles.css': 'sass/styles.scss'
+                    '../london_cafes/static/styles/styles.css': 'sass/styles.scss'
                 }
             }
         },

@@ -1,0 +1,16 @@
+@import 'normalize';
+@import 'forms';
+@import 'buttons';
+@import 'helpers';
+
+@import 'cafe-locator';
+
+
+html {
+	background: #fcfcfc;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 50em;
+}
