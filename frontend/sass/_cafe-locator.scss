@@ -1,12 +1,15 @@
 .cafe-locator {
-	max-width: 30em;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 
 	&__submit {
 		display: inline-block;
-		flex: 0 0 4em;
+		flex: 0 0 6em;
+		color: #3c3c3c;
+		font-weight: bold;
+		margin-left: 1em;
 	}
 
 	&__search {
@@ -14,4 +17,5 @@
 		max-width: 20em;
 		flex: auto;
 	}
+
 }
