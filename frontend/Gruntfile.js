@@ -24,7 +24,6 @@ module.exports = function(grunt) {
                     '../london_cafes/static/styles/styles.css': 'sass/styles.scss'
                 }
             }
-          }
         },
         //------- Watch SASS -> CSS -------//
         watch: {
