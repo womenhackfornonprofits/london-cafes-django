@@ -40,6 +40,7 @@ Each cafe will be handpicked and “features” ranked like wifi signal, how gre
 
 
 
+
 # Setup
 ## Tools
 1. **Terminal**: [iTerm2](https://www.iterm2.com/) (MacOSX), [Terminator](http://gnometerminator.blogspot.co.uk/p/introduction.html) (Linux) or use your preffered one.

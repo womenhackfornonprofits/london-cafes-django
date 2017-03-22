@@ -1,0 +1,47 @@
+.header{
+  text-align: center; 
+  background-color: #454e62;
+  font-size: 0.9em;
+  
+  @media(min-width:768px){
+    display: flex;
+  }
+  
+  &__logo{
+    background-color: red;
+    display: inline-block;
+    background-color: #d1755c;
+    width: 80%;
+    padding: 2em;
+    
+    @media(min-width:768px){
+      width: 20%; 
+      float: left;
+      align-items: stretch;
+      margin-left: 5%;
+    }
+  }
+  
+  &__list{
+    padding: 1.5em;
+    margin: 0;
+    
+     @media(min-width:768px){
+        padding: 2em;
+        margin-right: 2em;
+     }
+  }
+  
+  &__link{
+    list-style-type: none;
+    display: inline;
+    margin: 1em;
+    
+    a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.3em;
+    }
+  }
+}
+

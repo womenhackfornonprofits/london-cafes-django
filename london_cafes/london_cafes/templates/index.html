@@ -3,8 +3,13 @@
 {% block title %}Home{% endblock %}
 
 {% block main %}
-    <div>
-      <h1>London Cafes</h1>
-      <h2>Coming soon</h2>
-    </div>
+    <section class='container'>
+     	<h1>We Meet</h1>
+      	<h2>Find a great place to work</h2>
+    	<form class="cafe-locator">
+            <label for="search" class="visually-hidden">Find a cafe near you:</label>
+            <input class="cafe-locator__search" type="text" name="search" placeholder="Search for a cafe near you...">
+        	<input class="cafe-locator__submit button" type="submit" value="Search" class="button">
+    	</form>
+    </section>
 {% endblock %}

@@ -1,14 +1,64 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block layout %}
 
-    <header>
-    </header>
-
+    <div class="content_wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img class="header__img" src="">
+        </div>
+      
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__link">
+               <a href="/" title="">Home</a>
+            </li>
+            <li class="header__link">
+              <a href="#" title="">Search</a>
+            </li>
+            <li class="header__link">
+              <a href="#" title="">About Us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    
     {% block main %}
     {% endblock %}
+    </div>
 
-    <footer>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer_list">
+                <li class="footer_item">
+                    <a class="footer_link" href="#">Twitter</a>
+                </li>
+                <li class="footer_item">
+                    <a class="footer_link" href="#">Facebook</a>
+                </li>
+                <li class="footer_item">
+                    <a class="footer_link" href="#">Medium</a>
+                </li>
+                <li class="footer_item">
+                    <a class="footer_link" href="#">Github</a>
+                </li>
+            </ul>
+            <ul class="footer_list">
+                <li class="footer_item">
+                    <a class="footer_link" href="#">Link 1</a>
+                </li>
+                <li class="footer_item">
+                    <a class="footer_link" href="#">Link 2</a>
+                </li>
+                <li class="footer_item">
+                    <a class="footer_link" href="#">Link 3</a>
+                </li>
+            </ul>
+            <div class="footer_copyright">
+                <p>Copyright &#xA9; Women Hack For Non-Profits 2016.</p>
+            </div>
+        </div>
     </footer>
-
+    
 {% endblock %}

@@ -1,9 +1,38 @@
-$main-body-background-clr: #fcfcfc;
-
-
-@import "normalize";
+@import 'normalize';
+@import 'forms';
+@import 'buttons';
+@import 'helpers';
 @import "partials/base";
+@import "partials/footer";
+@import "partials/header";
+@import 'cafe-locator';
+@import 'custom-typography';
+@import 'mixins';
 
-body {
-	$main-body-background-clr: #fcfcfc;
+
+
+html {
+	background: #fcfcfc;
 }
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 50em;
+}
+
+.content_wrapper{
+	flex: 1;
+}
+
+
+// temporary TO DO
+h1, h2 {
+	text-align: center;
+}
+

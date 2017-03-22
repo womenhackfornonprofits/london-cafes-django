@@ -1,0 +1,24 @@
+.footer {
+    background-color: #3c3c3c;
+    padding: 30px 0;
+    &_list {
+        text-align: center;
+    }
+    &_item {
+        list-style: none;
+        display: inline;
+        padding: 1em;
+    }
+    &_link,
+    &_link:visited {
+        text-decoration: none;
+        color: pink;
+        &:hover {
+            color: blue;
+        }
+    }
+    &_copyright {
+        text-align: center;
+        color: green;
+    }
+}
