@@ -26,17 +26,18 @@ Each cafe will be handpicked and “features” ranked like wifi signal, how gre
 
 ## Team
 - [Bibiana](https://github.com/BibianaC) - Back End
-- [Emiliana](https://github.com/emilianas) - Back End, Front End
+- [Carly](https://github.com/gnocchi2815) - Back End
+- [Emiliana](https://github.com/emilianas) - PM, Back End, Front End (Learning)
 - [Ichi](https://github.com/Icicleta) - Back End
 - [Karen](https://github.com/neraks) - Front End
 - [Lili](https://github.com/lili2311) - PM, Front End, Back End
 - [Lucy](https://github.com/LucyMac) - Front-end
 - [Nandhini](https://github.com/Nandhini31) - Back End, Front End
 - [Natalia](https://github.com/natalia-z) - Front End
-- [Nori] (https://github.com/denesnori) - Back End, Front End
+- [Nori](https://github.com/denesnori) - Back End, Front End
 - [Nuria](https://github.com/nuria-gs) - Front End (Learning)
 - [Raquel](https://github.com/raquel-ucl) - Back End, Front End
-- [Carly](https://github.com/gnocchi2815) - Back End
+
 
 
 
