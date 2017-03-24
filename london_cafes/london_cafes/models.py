@@ -43,6 +43,7 @@ class Wifi(Ratings):
 
 class Cafe(models.Model):
     created_at = models.DateTimeField(default=timezone.now, editable=False)
+    deleted = models.BooleanField(default=False)
     name = models.CharField(max_length=200)
     description = models.CharField(max_length=200)
     address = models.ForeignKey(Address)
