@@ -1,5 +1,25 @@
 from django.db import models
-from django.utils import timezone
+
+#class CafeQuerySet(models.QuerySet):
+class CafeManager(models.Manager):
+
+    def atmosphere_exact_rating(self, rating):
+        return self.filter(atmosphere_rating__rating=rating)
+
+    def coffee_exact_rating(self, rating):
+        return self.filter(coffee_rating__rating=rating)
+
+    def wifi_exact_rating(self, rating):
+        return self.filter(wifi_rating__rating=rating)
+
+    def atmosphere_gte_rating(self, rating):
+        return self.filter(atmosphere_rating__rating__gte=rating)
+
+    def coffee_gte_rating(self, rating):
+        return self.filter(coffee_rating__rating__gte=rating)
+
+    def wifi_gte_rating(self, rating):
+        return self.filter(wifi_rating__rating__gte=rating)
 
 RATING_OPTIONS = (
     (1, 'Not Good'),
@@ -9,43 +29,23 @@ RATING_OPTIONS = (
     (5, 'Excellent'),
 )
 
-
-class Address(models.Model):
-    street = models.TextField()
-    postcode = models.TextField()
-    city = models.TextField()
-
-    class Meta:
-        verbose_name_plural = 'addresses'
-
-
 class Ratings(models.Model):
     rating = models.CharField(
         max_length=30,
         choices=RATING_OPTIONS,
         default=5)
 
-    class Meta:
-        abstract = True
-
-
-class Atmosphere(Ratings):
-    pass
-
-
-class Coffee(Ratings):
-    pass
-
-
-class Wifi(Ratings):
-    pass
-
-
 class Cafe(models.Model):
-    created_at = models.DateTimeField(default=timezone.now, editable=False)
     name = models.CharField(max_length=200)
+    deleted = models.BooleanField(default=False)
     description = models.CharField(max_length=200)
-    address = models.ForeignKey(Address)
-    atmosphere = models.ForeignKey(Atmosphere)
-    coffee = models.ForeignKey(Coffee)
-    wifi = models.ForeignKey(Wifi)
+    address1 = models.CharField(max_length=200)
+    address2 = models.CharField(max_length=200)
+    address3 = models.CharField(max_length=200)
+    city = models.CharField(max_length=200)
+    post_code = models.CharField(max_length=30)
+    atmosphere_rating = models.ForeignKey(Ratings, related_name="atmosphere_rating")
+    coffee_rating = models.ForeignKey(Ratings, related_name="coffee_rating")
+    wifi_rating = models.ForeignKey(Ratings, related_name="wifi_rating")
+
+    objects = CafeManager()
